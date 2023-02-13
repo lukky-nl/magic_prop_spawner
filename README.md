@@ -1,5 +1,7 @@
 # Magic prop spawner
 
+This projects was made in Godot V3.5.1
+
 Model : https://www.cgtrader.com/free-3d-models/military/other/medieval-props-lowpoly \
 Particle Sprite : https://www.kenney.nl/assets/particle-pack
 
