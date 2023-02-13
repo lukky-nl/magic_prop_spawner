@@ -1,0 +1,46 @@
+[gd_scene load_steps=7 format=2]
+
+[sub_resource type="StreamTexture" id=6]
+flags = 23
+load_path = "res://.import/magic_05.png-fcd1da39b851d773208c2ab0898463dd.s3tc.stex"
+
+[sub_resource type="SpatialMaterial" id=1]
+flags_transparent = true
+flags_unshaded = true
+vertex_color_use_as_albedo = true
+albedo_texture = SubResource( 6 )
+
+[sub_resource type="Gradient" id=4]
+offsets = PoolRealArray( 0.0129032, 0.167742, 1 )
+colors = PoolColorArray( 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0 )
+
+[sub_resource type="GradientTexture" id=5]
+gradient = SubResource( 4 )
+width = 64
+
+[sub_resource type="ParticlesMaterial" id=2]
+emission_shape = 1
+emission_sphere_radius = 0.4
+direction = Vector3( 0, 1, 0 )
+spread = 180.0
+gravity = Vector3( 0, 5, 0 )
+initial_velocity = 3.0
+initial_velocity_random = 1.0
+linear_accel = -7.0
+scale = 3.0
+scale_random = 1.0
+color_ramp = SubResource( 5 )
+
+[sub_resource type="QuadMesh" id=3]
+size = Vector2( 0.08, 0.08 )
+
+[node name="Particles" type="Particles"]
+transform = Transform( -1, -4.70192e-05, 1.66547e-05, -4.70192e-05, 1, -1.58256e-05, -1.66547e-05, -1.58256e-05, -1, 0, 0, 0 )
+material_override = SubResource( 1 )
+emitting = false
+lifetime = 0.7
+one_shot = true
+explosiveness = 1.0
+randomness = 0.44
+process_material = SubResource( 2 )
+draw_pass_1 = SubResource( 3 )

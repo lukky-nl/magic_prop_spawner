@@ -1,0 +1,16 @@
+[gd_resource type="Environment" load_steps=2 format=2]
+
+[sub_resource type="ProceduralSky" id=1]
+
+[resource]
+background_mode = 1
+background_sky = SubResource( 1 )
+background_color = Color( 0.180392, 0.14902, 0.133333, 1 )
+fog_enabled = true
+fog_color = Color( 0.180392, 0.14902, 0.133333, 1 )
+fog_depth_begin = 12.0
+fog_depth_end = 20.0
+tonemap_mode = 2
+tonemap_exposure = 0.5
+ssao_enabled = true
+ssao_light_affect = 1.0
